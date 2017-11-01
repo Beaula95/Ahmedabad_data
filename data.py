@@ -71,7 +71,7 @@ def shape_element(element, node_attr_fields=NODE_FIELDS, way_attr_fields=WAY_FIE
 					if re.search(numeric,j):
 						n=j.strip('0123456789')
 						node_attribs["user"]=n
-		#print(node_attribs)
+		print(node_attribs)
 		id1=element.attrib["id"]
 		for tag in element.iter("tag"):
 			ntag={}
@@ -104,7 +104,7 @@ def shape_element(element, node_attr_fields=NODE_FIELDS, way_attr_fields=WAY_FIE
 					if re.search(numeric,j):
 						n=j.strip('0123456789')
 						way_attribs["user"]=n
-		#print(way_attribs)
+		print(way_attribs)
 		id2=element.attrib["id"]
 		for tag in element.iter("tag"):
 			wtag={}
